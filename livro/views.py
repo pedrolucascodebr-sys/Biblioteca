@@ -1,4 +1,11 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
-def cadastrar(request):
-    return HttpResponse
+from usuarios.models import Usuario
+
+
+def home(request):
+    if request.session.get('usuario'):
+        usuario = Usuario.objects.get(id = request.session['usuario']).nome
+        return  HttpResponse ('<h1> ola mundo <h1>')
+    else:
+        return redirect('/auth/login/?status=2')

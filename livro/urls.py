@@ -4,6 +4,6 @@ from . import views
 
 
 urlpatterns = [
-    path('cadastrar/', views.cadastrar)
+    path('home/', views.home, name= 'home')
 
 ]
