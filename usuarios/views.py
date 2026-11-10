@@ -4,6 +4,7 @@ from django.shortcuts import redirect
 from .models import Usuario
 from hashlib import sha256
 
+
 def login(request):
     status = request.GET.get('status')
     return render(request, 'login.html',{'status': status})
@@ -54,7 +55,7 @@ def valida_login(request):
         return redirect('/auth/login/?status=1')
     elif len(usuario) > 0:
         request.session['usuario'] = usuario[0].id
-        return redirect('/livra/home/?id_usuario={request.session["usuario")}')
+        return redirect('/livro/home/?id_usuario={request.session["usuario")}')
 
 
 def sair(request):

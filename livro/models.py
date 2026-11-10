@@ -1,5 +1,25 @@
 from django.db import models
 from datetime import date
+from usuarios.models import Usuario
+
+class Categoria(models.Model):
+    nome = models.CharField(max_length=30)
+    descricao = models.TextField()
+
+
+
+    def __str__(self):
+        return self.nome
+
+
+class Emprestimos(models.Model):
+     nome_emprestado = models.CharField(max_length= 30, blank= True, null= True)
+     data_emprestimo = models.DateTimeField(blank= True, null= True)
+     data_devolucao = models.DateTimeField(blank= True, null= True)
+     tempo_duracao = models.TimeField(blank= True, null= True)
+     Categoria = models.ForeignKey(Categoria, on_delete=models.DO_NOTHING)
+     usuario = models.ForeignKey(Usuario, on_delete=models.DO_NOTHING)
+
 
 class Livros(models.Model):
     nome = models.CharField(max_length= 100)
@@ -11,7 +31,8 @@ class Livros(models.Model):
     data_emprestimo = models.DateTimeField(blank= True, null= True)
     data_devolucao = models.DateTimeField(blank= True, null= True)
     tempo_duracao = models.TimeField(blank= True, null= True)
-
+    Categoria = models.ForeignKey(Categoria, on_delete=models.DO_NOTHING)
+    usuario = models.ForeignKey(Usuario, on_delete=models.DO_NOTHING)
     class Meta:
         verbose_name = 'Livro'
 
