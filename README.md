@@ -10,7 +10,15 @@
   
   Principais funcionalidades: login de usuário, empréstimo de livro e devolução.
   
-  Instruções de instalação e execução: 
+  Instruções de instalação e execução: Para rodar um projeto Django que está em um repositório, comece conferindo se o Python e o Git estão instalados, digitando python --version e git --version no terminal. No VS Code, instale também a extensão Python da Microsoft, que facilita bastante o trabalho com o interpretador e a depuração.
+
+Em seguida, abra o terminal do VS Code com Ctrl + ' e clone o projeto usando o comando git clone seguido do endereço do repositório. Depois, entre na pasta criada com cd nome-do-projeto e abra essa pasta no VS Code, pelo menu File > Open Folder, ou digitando code . no terminal.
+
+Dentro da pasta do projeto, crie um ambiente virtual com o comando python -m venv venv. Para ativá-lo no Windows usando o PowerShell, digite venv\Scripts\Activate.ps1; no CMD, venv\Scripts\activate.bat; e no Linux ou Mac, source venv/bin/activate. Se o PowerShell bloquear a execução do script, rode antes o comando Set-ExecutionPolicy -Scope CurrentUser RemoteSigned e tente ativar de novo.
+
+Agora instale o Django digitando pip install django.
+
+Com tudo pronto, rode as migrações com python manage.py migrate. Se quiser acessar o painel administrativo, crie um usuário com python manage.py createsuperuser. Por fim, inicie o servidor com python manage.py runserver e abra no navegador o endereço 127.0.0.1:8000.
 
   Link da ferramenta de gerenciamento de projetos ou evidências do planejamento: https://trello.com/b/MxkrxjSU
   
