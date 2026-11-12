@@ -1,6 +1,5 @@
 ﻿# Biblioteca
   Nome e descrição do projeto: Bibliotech Manager. Esse é um software de gerenciamento de bibliotecas desenvolvido para auxiliar os clientes na visualização dos 
-  
   livros disponíveis e na possibilidade de empréstimos. Além, claro, de ser a ferramenta de trabalho do bibliotecário na gestão funcional do negócio.
   
   Problema que o software resolve: Empréstimos, devolução e controle de bibliotecas.
