@@ -27,13 +27,10 @@ Com tudo pronto, rode as migrações com python manage.py migrate. Se quiser ace
   <img width="1600" height="784" alt="image" src="https://github.com/user-attachments/assets/17b059c7-788f-4a9b-b3dd-61dd562bd859" />
 
 
-<img width="1600" height="776" alt="image" src="https://github.com/user-attachments/assets/4430b2d7-8217-4605-8e9f-dd329eb026f4" />
+  <img width="1600" height="776" alt="image" src="https://github.com/user-attachments/assets/4430b2d7-8217-4605-8e9f-dd329eb026f4" />
 
 
-
-  <img width="1600" height="786" alt="image" src="https://github.com/user-attachments/assets/2613d828-d360-466b-b644-f291fc3d04f0" />
-
-  <img width="1600" height="777" alt="image" src="https://github.com/user-attachments/assets/0210576b-6660-496b-8b4e-341e4b4e9a8e" />
+  <img width="1915" height="942" alt="Captura de tela 2026-11-13 170051" src="https://github.com/user-attachments/assets/10878f48-d638-4f7e-a38b-c4c7e0cdba05" />
 
 
 
