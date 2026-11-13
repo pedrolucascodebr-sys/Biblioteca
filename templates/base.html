@@ -71,7 +71,42 @@
                   </div>
 
                   <div style="display: none;" id="emprestimos">
-                      emprestimos
+                   
+                     <button onclick="exibe_input_emprestado('1')" class="btn btn-success">Usuário novo</button> 
+                     <button onclick="exibe_input_emprestado('2')" class="btn btn-dark">Usuário novo</button> 
+                     <br>
+                     <br>
+                    <form id="form_emprestimo" action="{% url 'cadastrar_emprestimo' %}" method="POST">{% csrf_token %}
+
+                      <select style="display: none;" id="nome_emprestado" class="form-control" name="nome_emprestado">
+                          {% for usuario in usuarios %}
+                            <option value="{{usuario.id}}">{{usuario.nome}}</option>
+                          {% endfor %}
+                          
+                      </select>
+                      <br>
+
+                      <input id="nome_emprestado_anonimo" type="text" placeholder="Digite o nome para quem emprestou..." name="nome_emprestado_anonimo" class="form-control">
+
+                      <br>
+                      <select class="form-control" name="livro_emprestado">
+
+                          {% for livro in livros_emprestar %}
+                            <option value="{{livro.id}}">{{livro.nome}}</option>
+                          {% endfor %}
+                          
+                      </select>
+
+                      <br>
+
+                      <input type="submit" value="Emprestar" class="btn btn-success">
+
+
+                    </form>
+
+
+
+
                   </div>
               </div>
             </div> 
@@ -106,6 +141,20 @@
 
             livro.style.display = 'none';
             categoria.style.display = 'none';
+
+          }
+        }
+
+        function exibe_input_emprestado(v1){
+
+          if(v1 == 1){
+            document.getElementById('nome_emprestado').style.display = 'none'
+            document.getElementById('nome_emprestado_anonimo').style.display = 'block'
+
+          }else{
+            document.getElementById('nome_emprestado').style.display = 'block'
+            document.getElementById('nome_emprestado_anonimo').style.display = 'none'
+
 
           }
         }
