@@ -64,4 +64,4 @@ def valida_login(request):
 
 def sair(request):
     request.session.flush()
-    redirect('/auth/login')
+    return redirect('/auth/login')
