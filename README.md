@@ -32,6 +32,10 @@ Com tudo pronto, rode as migrações com python manage.py migrate. Se quiser ace
 
   <img width="1915" height="942" alt="Captura de tela 2026-11-13 170051" src="https://github.com/user-attachments/assets/10878f48-d638-4f7e-a38b-c4c7e0cdba05" />
 
+  
+  <img width="1600" height="784" alt="foto" src="https://github.com/user-attachments/assets/a5bb4719-0241-466f-afda-4d62302a51ba" />
+
+
 
 
   
