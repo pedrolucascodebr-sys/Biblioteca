@@ -21,4 +21,20 @@ Agora instale o Django digitando pip install django.
 Com tudo pronto, rode as migrações com python manage.py migrate. Se quiser acessar o painel administrativo, crie um usuário com python manage.py createsuperuser. Por fim, inicie o servidor com python manage.py runserver e abra no navegador o endereço 127.0.0.1:8000.
 
   Link da ferramenta de gerenciamento de projetos ou evidências do planejamento: https://trello.com/b/MxkrxjSU
+
+
+  
+  <img width="1600" height="784" alt="image" src="https://github.com/user-attachments/assets/17b059c7-788f-4a9b-b3dd-61dd562bd859" />
+
+
+<img width="1600" height="776" alt="image" src="https://github.com/user-attachments/assets/4430b2d7-8217-4605-8e9f-dd329eb026f4" />
+
+
+
+  <img width="1600" height="786" alt="image" src="https://github.com/user-attachments/assets/2613d828-d360-466b-b644-f291fc3d04f0" />
+
+  <img width="1600" height="777" alt="image" src="https://github.com/user-attachments/assets/0210576b-6660-496b-8b4e-341e4b4e9a8e" />
+
+
+
   
